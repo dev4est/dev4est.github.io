@@ -1,10 +1,4 @@
-*~
-*#
-.DS_STORE
 node_modules/
-
-# Thumbnails
-._*
 
 ### Sass ###
 .sass-cache/
