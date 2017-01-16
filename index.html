@@ -1,47 +1,168 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Портфолио HTML-верстальщик (верстальщик HTML), услуги верстальщика, создание сайтов | KeyBro</title>
     <meta name="description" content="Услуги по html-верстке и разработке сайтов: интернет магазин, лендинг, одностраничный сайт, корпоративный сайт. Примеры работ, портфолио">
     <meta name="keywords" content="верстальщик, услуги верстальщика, кроссбраузерная вёрстка, HTML-верстка, создание сайтов, разработка сайтов, сайт под ключ">
     <meta name="author" content="KeyBro">
-    <link rel="stylesheet" href="">
-     
-</head>
-<body>
-<!-- SECTION: Navigation -->
-<div>
-   <div>
-       <a href="index.html">
-       <span>KeyBro</span><br>
-       <span>Html Верстальщик</span>
-       </a>
-   
-    <nav>
-       <ul>
-           <li><a href="#">Мои работы</a></li>
-           <li><a href="#">Обо мне</a></li>
-           <li><a href="#">Контакты</a></li>
-       </ul> 
-    </nav>
-    <a href="#">Сделать заказ</a>
-    </div>
-</div>
-<!-- END SECTION: Navigation -->
-<!-- SECTION: Intro-->
-    <header class="header">
-       <div class="introduction">
-       <h1>
-           <span>Key</span>
-           <span>Bro</span>
-       </h1>
-       <svg class="introduction__arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 130 65" xml:space="preserve" enable-background="new 0 0 130 65"><g transform="translate(0.000000,65.000000) scale(0.100000,-0.100000)"><path d="M22.2 634c-50-35-40-47 293-349 174-157 323-285 333-285 24 0 635 552 647 585 8 23 6 30-14 46 -13 10-31 19-40 19s-57-37-107-83c-50-45-179-162-287-260l-197-179 -147 134c-319 289-433 388-446 388C50.2 650 34.2 643 22.2 634z"/></g></svg>
-       </div>
-       
-    </header>
-<!-- END SECTION: Intro -->
+    <link rel="stylesheet" href="assets/css/main.css"> </head>
 
+<body>
+    <!-- SECTION: Navigation -->
+    <div id="top" class="navigation">
+        <div class="navigation__wrapper  wrapper--large">
+            <a class="navigation__logo  logo" href="index.html"> <span class="logo__nickname">KeyBro</span>
+                <br> <span class="logo__profession">Html Верстальщик</span> </a>
+            <nav class=navigation__container>
+                <ul class="navigation__list">
+                    <li><a href="#">Мои работы</a></li>
+                    <li><a href="#">Обо мне</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav> <a class="navigation__cta  button" href="#">Сделать заказ</a> </div>
+    </div>
+    <!-- END SECTION: Navigation -->
+    <!-- SECTION: Intro-->
+    <header class="header">
+        <div class="introduction">
+            <h1 class="introduction__content">
+           <span class="introduction__content-el  introduction__content-el--nick">Key</span>
+           <span class="introduction__content-el  introduction__content-el--name">Bro</span>
+       </h1>
+            <svg class="introduction__arrow-el" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 130 65" xml:space="preserve" enable-background="new 0 0 130 65">
+                <g transform="translate(0.000000,65.000000) scale(0.100000,-0.100000)">
+                    <path d="M22.2 634c-50-35-40-47 293-349 174-157 323-285 333-285 24 0 635 552 647 585 8 23 6 30-14 46 -13 10-31 19-40 19s-57-37-107-83c-50-45-179-162-287-260l-197-179 -147 134c-319 289-433 388-446 388C50.2 650 34.2 643 22.2 634z" /> </g>
+            </svg>
+        </div>
+    </header>
+    <!-- END SECTION: Intro -->
+    <main>
+        <!-- SECTION: Slogan -->
+        <section class="slogan">
+            <div class="slogan__wrapper  wrapper__small">
+                <div class="slogan__content">
+                    <div class="slogan__content-blurb  blurb  blurb--framed">
+                        <h2 class="blurb__heading">Нет ничего невозможного</h2>
+                        <p class="blurb__copy">Если ради этого тяжело работать.</p>
+                    </div>
+                    <p class="slogan__content-signature">Svetlana Tislenko</p>
+                </div> <img class="slogan__visual" src="#" alt="Svetlana Tislenko"> </div>
+        </section>
+        <!-- END SECTION: Slogan -->
+        <!-- SECTION: Project-first -->
+        <section class="project-first">
+            <div class="project-first__wrapper  wrapper--large">
+                <div class="project-first__content blurb">
+                    <h2 class="blurb__heading">AutoStock<br>Автозапчасти</h2>
+                    <p class="blurb__copy blurb__copy--tight">Интернет-магазин для компании, занимающейся доставкой бу запчастей. Сайт работает на основе API с Польским аукционом moto.allegro.pl. Мной выполнен прототип, дизайн и вёрстка. Целью было сделать сайт максимально лаконичным, но в то же время запоминающемся и функциональным.</p> <a class="project-link" href="#">Ссылка на Веб-сайт</a> </div>
+            </div>
+            <figure class="project-first__visual"></figure>
+        </section>
+        <!-- END SECTION: Project-first -->
+        <!-- SECTION: Project-second -->
+        <section class="project-second">
+            <div class="project-second__wrapper  wrapper--small">
+                <div class="project-second__content  blurb">
+                    <h2 class="blurb__heading">Boroda<br> BarberShop</h2>
+                    <p class="blurb__copy  blurb__copy--tight">Сайт мужской парикмахерской. Фиксированная вёрстка, HTML5, CSS3, JavaScript (нативный), прогрессивное улучшение.</p> <a class="project-link" href="#">Ссылка на Веб-сайт</a> </div>
+            </div>
+            <figure class="project-second__visual"></figure>
+        </section>
+        <!-- END SECTION: Project-second -->
+        <!-- SECTION: Last-Projects- -->
+        <section id="last-projects" class="last-project">
+            <h2 class="last-projects__heading  title">Последние проекты</h2>
+            <div class="last-projects__wrapper  wrapper--large">
+                <ul class="last-projects__list">
+                    <li class="last-projects__list-el  last-projects__list-el--active">
+                        <div class="last-projects__content">
+                            <div class="last-projects__content-blurb  blurb  blurb--framed">
+                                <h2 class="blurb__heading">Portfolio<br>Личный сайт</h2>
+                                <p class="blurb__copy  blurb__copy--tight">Адаптивная верстка, HTML5, CSS3, JavaScript(нативный), прогрессивное улучшение.</p> <a class="project-link" href="#">Ссылка на Веб-сайт</a> </div>
+                        </div>
+                        <div class="last-projects__visual"> <img src="#" alt=""> </div>
+                    </li>
+                    <li class="last-projects__list-el">
+                        <div class="last-projects__content">
+                            <div class="last-projects__content-blurb  blurb  blurb--framed">
+                                <h2 class="blurb__heading">Сайт новый</h2>
+                                <p class="blurb__copy  blurb__copy--tight">Пока нет его, но скоро будет.</p> <a class="project-link" href="#">Ссылка на Веб-сайт</a> </div>
+                        </div>
+                        <div class="last-projects__visual"> <img src="#" alt=""> </div>
+                    </li>
+                </ul>
+                <ul class="last-project__navigation">
+                    <li class="last-projects__navigation-el  last-projects__navigation-el--active"></li>
+                    <li class="last-projects__navigation-el"></li>
+                    <li class="last-projects__navigation-el"></li>
+                </ul>
+            </div>
+        </section>
+        <!-- END SECTION: Last-Projects -->
+        <!-- SECTION: About -->
+        <section class="about">
+            <h2 class="about__heading  title">Обо мне</h2>
+            <div class="about__wrapper  wrapper--large">
+                <div class="about__left-block">
+                    <div class="about__my-photo"> <img src="#" alt="" width="300" height="300"> </div>
+                    <div class="about__contacts">
+                        <div class="about__contacts-title">Позвонить / написать:</div> <a href="tel:+380974912098" class="about__link">+38 (097) 49-12-098</a> <a href="mailto:contextnorm@gmail.com?subject=Сообщение%20для%20KeyBro" class="about__link">contextnorm@gmail.com</a> </div>
+                    <div class="about__contacts">
+                        <div class="about__contacts-title">Найти меня в соц. сетях:</div> <a href="https://github.com/keybro" target="_blank" class="about__link">GitHub: <span>keybro</span></a> <a href="https://vk.com/key_bro" target="_blank" class="about__link">Вконтакте: <span>key_bro</span></a> </div>
+                </div>
+                <div class="about__right-block">
+                    <h2 class="about__title about__title--name">Светлана Тисленко</h2>
+                    <div class="about__description about__description--job">HTML - верстальщик</div>
+                    <h3 class="about__title">Основная специализация:</h3>
+                    <p class="about__description">Верстка крупных проектов (фиксированная, резиновая, адаптивная) без посадки на CMS и верстка посадочных страниц</p>
+                    <h3 class="about__title">Ключевые навыки:</h3>
+                    <ul class="about__description">
+                        <li class="about__item">HTML, CSS</li>
+                        <li class="about__item">Начальные знания JS (+jQuery) на уровне подключения плагинов</li>
+                        <li class="about__item">Валидная, кроссбраузерная (IE9+), адаптивная, семантическая вёрстка</li>
+                        <li class="about__item">Знаю, что такое LESS, Sass. Использую Sass</li>
+                        <li class="about__item">Как средство автоматизации использую Gulp</li>
+                        <li class="about__item">Названия классам даю по методологии БЭМ</li>
+                        <li class="about__item">Работаю с Git через командную строку</li>
+                        <li class="about__item">Верстка макетов из Аdobe Photoshop или Аdobe illustrator</li>
+                        <li class="about__item">SVG, ретинизация</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- END SECTION: About -->
+        <!-- SECTION: Contact -->
+        <section id="contact" class="contact">
+            <h2 class="contact__heading  title">Связаться со мной</h2>
+            <div class="contact__wrapper  wrapper--large">
+                <div class="contact__visual"> <img src="#" alt="KeyBro-Location"> </div>
+            </div>
+            <form class="contact__form" action="#">
+                <input class="contact__form-el  contact__form-el--name" type="text" placeholder="Имя" spellcheck="false">
+                <input class="contact__form-el  contact__form-el--email" type="email" placeholder="Email" spellcheck="false">
+                <textarea class="contact__form-el  contact__form-el--message" placeholder="Ваше Сообщение"></textarea>
+                <input class="contact__form-el  contact__form-el--submit" type="submit" value="Отправить"> </form>
+        </section>
+        <!-- END SECTION: Contact -->
+    </main>
+    <!-- SECTION: Footer -->
+    <footer class="footer">
+        <div class="footer__wrapper  wrapper--large">
+            <p></p>
+            <a class="footer__logo  logo" href="index.html"> <span class="logo__nickname">KeyBro</span>
+                <br> <span class="logo__profession">Html Верстальщик</span> </a>
+            <a class="footer__arrow" href="#top">
+                <svg class="footer__arrow-el" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_2" x="0" y="0" viewBox="0 0 130 65" xml:space="preserve" enable-background="new 0 0 130 65">
+                    <g transform="translate(0.000000,65.000000) scale(0.100000,-0.100000)">
+                        <path d="M315.4 365c-336-305-345-315-290-351 18-12 32-14 45-8 10 5 145 123 300 262l281 253 196-178c108-98 237-215 287-260 50-46 98-83 107-83s27 9 40 19c20 16 22 23 14 46 -12 33-623 585-647 585C638.4 650 489.4 522 315.4 365z" /> </g>
+                </svg>
+            </a>
+        </div>
+    </footer>
+    <!-- END SECTION: Footer -->
 </body>
+
 </html>
