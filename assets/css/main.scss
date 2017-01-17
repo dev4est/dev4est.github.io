@@ -1,3 +1,20 @@
+
 // 1 - BASE
 
-@import '1-base/normalize'
+@import "1-base/normalize";
+@import "1-base/vars";
+@import "1-base/globals";
+@import "1-base/body-element";
+
+// 2 - LAYOUT
+
+@import "2-layout/grid";
+
+// 3 - MODULES
+
+@import "3-modules/title";
+@import "3-modules/animations";
+
+// 4 - PAGES
+
+@import "4-pages/home";

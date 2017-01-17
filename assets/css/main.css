@@ -178,3 +178,80 @@ table {
 td,
 th {
   padding: 0; }
+
+body {
+  font-family: "Roboto Condensed", sans-serif; }
+
+.wrapper, .wrapper--small, .wrapper--large {
+  position: relative;
+  max-width: 90%;
+  height: 100%;
+  margin: 0 auto; }
+  .wrapper--small {
+    width: 980px; }
+  .wrapper--large {
+    width: 1170px; }
+
+.title {
+  margin-bottom: 40px;
+  color: #373636;
+  text-align: center;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 72px; }
+
+@keyframes scrollDown {
+  0% {
+    transform: translate(-12px, 0px);
+    opacity: 0; }
+  75% {
+    transform: translate(-12px, 45px);
+    opacity: 1; }
+  100% {
+    transform: translate(-12px, 45px);
+    opacity: 0; } }
+
+/************************* Introduction *************************/
+.introduction {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(130deg, #8c0064, #a30395); }
+  .introduction__content {
+    font-weight: 700;
+    font-size: 20vw;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 10px 18px 35px rgba(88, 88, 88, 0.23);
+    transform: matrix(1.01107, 0, 0, 1.01107, 0, 0);
+    margin: 10px 0; }
+  .introduction::before {
+    content: "BRO";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 53vw;
+    font-weight: 700;
+    opacity: 0.2;
+    color: #2046f2; }
+  .introduction__arrow {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-12px, 0px);
+    width: 24px;
+    fill: #6c076e;
+    animation: scrollDown 1.6s infinite; }
+  @media (min-width: 1440px) {
+    .introduction::before {
+      font-size: 700px; }
+    .introduction__content {
+      font-size: 230px; } }
+  @media (max-height: 540px) {
+    .introduction__arrow {
+      animation: none; } }
