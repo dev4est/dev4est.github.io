@@ -186,7 +186,8 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  box-sizing: border-box; }
 
 .wrapper, .wrapper--small, .wrapper--large {
   position: relative;
