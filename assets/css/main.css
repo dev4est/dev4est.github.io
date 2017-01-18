@@ -179,6 +179,15 @@ td,
 th {
   padding: 0; }
 
+a {
+  display: inline-block;
+  text-decoration: none; }
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
 html {
   overflow-x: hidden; }
 
@@ -199,7 +208,7 @@ body {
   .wrapper--small {
     width: 980px; }
   .wrapper--large {
-    width: 1170px; }
+    width: 1130px; }
 
 .title {
   margin-bottom: 40px;
@@ -220,12 +229,52 @@ body {
     transform: translate(-12px, 45px);
     opacity: 0; } }
 
+.logo__nickname {
+  font-size: 40px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #373636;
+  text-transform: uppercase; }
+
+.logo__profession {
+  font-size: 16px;
+  font-weight: 400;
+  color: #9e9e9e;
+  text-transform: capitalize; }
+
+.navigation {
+  width: 100%;
+  height: 100px; }
+  .navigation__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .navigation__container {
+    width: 35%; }
+  .navigation__list {
+    display: flex;
+    justify-content: space-between; }
+    .navigation__list > li a {
+      text-transform: uppercase;
+      color: #373636;
+      font-weight: 700;
+      transition: .2s all ease-in-out; }
+      .navigation__list > li a:hover {
+        color: #fff; }
+
+.button {
+  border: 2px solid #648bbb;
+  border-radius: 25px;
+  padding: 8px 25px;
+  color: #648bbb;
+  font-weight: 700; }
+
 /************************* Introduction *************************/
 .introduction {
   position: relative;
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 88vh;
   align-items: center;
   justify-content: center;
   background: linear-gradient(130deg, #8c0064, #a30395); }
@@ -244,17 +293,17 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 53vw;
+    font-size: 52vw;
     font-weight: 700;
     opacity: 0.2;
     color: #2046f2; }
   .introduction__arrow {
     position: absolute;
-    bottom: 10%;
+    bottom: 15%;
     left: 50%;
     transform: translate(-12px, 0px);
     width: 24px;
-    fill: #6c076e;
+    fill: #ffffff;
     animation: scrollDown 1.6s infinite; }
   @media (min-width: 1440px) {
     .introduction::before {

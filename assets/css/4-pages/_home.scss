@@ -4,7 +4,7 @@
 	position: relative;
 	display: flex;
 	width: 100%;
-	height: 100vh;
+	height: 88vh;
 	align-items: center;
 	justify-content: center;
     background: linear-gradient(130deg, #8c0064, #a30395);
@@ -27,7 +27,7 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-        font-size: 53vw;
+        font-size: 52vw;
         font-weight: 700;
         opacity: 0.2;
         color:#2046f2;
@@ -36,11 +36,11 @@
     
     &__arrow {
 		position: absolute;
-		bottom: 10%;
+		bottom: 15%;
 		left: 50%;
 		transform: translate(-12px, 0px);
 		width: 24px;
-		fill: #6c076e;
+		fill: #ffffff;
 		animation: scrollDown 1.6s infinite;
         
 }
