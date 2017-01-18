@@ -7,3 +7,8 @@ gulp.task("sass", function()  {
      .pipe(sass())
      .pipe(gulp.dest("assets/css"));    
 });
+
+
+gulp.task("sass:watch", function () {
+  gulp.watch("assets/css/**/*.scss", ["sass"]);
+});
