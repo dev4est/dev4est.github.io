@@ -1,0 +1,11 @@
+{
+  "name": "keybro",
+  "version": "1.0.0",
+  "description": "Portfolio KeyBro",
+  "author": "KeyBro",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-watch": "^4.3.11"
+  }
+}
