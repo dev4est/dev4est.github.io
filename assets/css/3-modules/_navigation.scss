@@ -27,10 +27,18 @@
             &:hover {
 				color: darken($c-highlight, 5%);
                 text-decoration: underline;
-            
-            }
-            
-                  
+            }        
+        }
+    }
+    
+    &__burger {
+        display: none;
+    }
+    
+    @media (max-width: 991px) {
+        
+        &__cta {
+            display: none;
         }
     }
 }
