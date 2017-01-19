@@ -6,14 +6,12 @@
     font-weight: 700;
     transition: .2s all ease-in-out;
 
-&:hover,
+&:hover, 
 &:active,
 &:focus {
     color: lighten($c-highlight, 15%);
     border-color: lighten($c-highlight, 15%);
         }
-
-
 } 
 
 

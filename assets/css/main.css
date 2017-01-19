@@ -272,12 +272,9 @@ body {
   color: #648bbb;
   font-weight: 700;
   transition: .2s all ease-in-out; }
-
-:hover,
-:active,
-:focus {
-  color: #99b3d2;
-  border-color: #99b3d2; }
+  .button:hover, .button:active, .button:focus {
+    color: #99b3d2;
+    border-color: #99b3d2; }
 
 /************************* Introduction *************************/
 .introduction {
