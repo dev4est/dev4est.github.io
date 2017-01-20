@@ -11,11 +11,12 @@
     }
     
     &__container {
-        width: 35%;
+        width: 40%;
         position: absolute;
 		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+		left: 55%;
+		transform: translate(-55%, -50%);
+
     }
       
     &__list {
@@ -106,7 +107,24 @@
 				opacity: 1;
 				visibility: visible;
 				transition: visibility 0s, opacity .4s;
+            
+                .navigation__list {
+					
+                    & > li {
+                        @for $i from 1 through 4 {
+                            &:nth-child(#{$i}) a {
+								transition: transform .2s .2s * $i + .2s, color .2s ease-in-out;
+					}}
+                          & a {
+							transform: translateY(0);
+							
+                                &:hover {
+								color: lighten($c-highlight, 15%); 
+                           }
+                        }
             }
+            
+            } }
         }
     
        &__list {
