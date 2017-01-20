@@ -57,7 +57,16 @@
         @media (max-height: 540px){
 		
         &__arrow {
-			animation: none; }} 
+			animation: none; }}
+    
+    @media (max-width: 991px) {
+        &__arrow {
+         position: absolute;
+		bottom: 15%;
+		left: 50%;
+        animation: none;
+        }
+    }
 		
 }
 			

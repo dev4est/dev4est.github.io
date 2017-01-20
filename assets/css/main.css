@@ -382,3 +382,9 @@ body {
   @media (max-height: 540px) {
     .introduction__arrow {
       animation: none; } }
+  @media (max-width: 991px) {
+    .introduction__arrow {
+      position: absolute;
+      bottom: 15%;
+      left: 50%;
+      animation: none; } }
