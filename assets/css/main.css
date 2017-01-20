@@ -326,7 +326,8 @@ body {
     .navigation__list {
       height: 250px;
       flex-direction: column;
-      align-items: center; } }
+      align-items: center;
+      margin-top: 50px; } }
 
 .scroll-lock {
   position: fixed;
