@@ -255,7 +255,11 @@ body {
     align-items: center;
     justify-content: space-between; }
   .navigation__container {
-    width: 35%; }
+    width: 35%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
   .navigation__list {
     display: flex;
     justify-content: space-between; }

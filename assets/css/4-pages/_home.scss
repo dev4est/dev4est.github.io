@@ -48,22 +48,27 @@
      @media (min-width: 1440px) {
 		
             &::before {
-                font-size: 700px;}
+                font-size: 700px;
+         }
 			
         &__content {
 		
-            font-size: 230px;}}
+            font-size: 230px;
+         }
+    }
 					
         @media (max-height: 540px){
 		
         &__arrow {
-			animation: none; }}
+			animation: none; 
+            }
+    }
     
     @media (max-width: 991px) {
+        
         &__arrow {
         display: none; 
         }
-    }
-		
+    }	
 }
 			
