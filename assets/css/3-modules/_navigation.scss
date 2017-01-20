@@ -104,14 +104,22 @@
 				transition: visibility 0s, opacity .4s;
             }
         }
+    
+       &__list {
+			height: 250px;
+			flex-direction: column;
+			align-items: center ;
+            }
+    
     }
-    .scroll-lock {
+}
+
+   .scroll-lock {
 	position: fixed;
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
         }
-}
     
     
 
