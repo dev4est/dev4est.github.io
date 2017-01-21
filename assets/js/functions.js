@@ -1,10 +1,7 @@
-// @codekit-prepend "/vendor/TweenLite.min.js";
-// @codekit-prepend "/vendor/TimelineLite.min.js";
-
 
 $(document).ready(function() {
-
-/***************** Responsive Nav ******************/
+	
+	/***************** Responsive Nav ******************/
 
   $('.navigation__burger').click(function() {
 	  
@@ -19,21 +16,15 @@ $(document).ready(function() {
 	  $('html, body').toggleClass('scroll-lock');
 	  
   }
-    
-/***************** Smooth Scroll ******************/
+  
+/*****************Nav Href # ******************/
   
   $('a[href*="#"]:not([href="#0"])').click(function(ev) {
-	  
-	  ev.preventDefault();
 		
 		if ($('.navigation__container').hasClass('navigation__container--is-open')) {
 			navigationToggle();
 		}
-			
-		var target = $(this).attr('href');
 		
-		TweenLite.to(window, 1, {scrollTo: target});
-		
-	});    
+	});
 
 });
