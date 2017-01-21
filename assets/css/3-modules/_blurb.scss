@@ -1,0 +1,14 @@
+.blurb {
+    
+    &--framed {
+        background-color: $bg-secondary;
+        padding: 10px 0;
+    }
+    
+    &__heading {
+        color: $c-primary;
+        font-size: 65px;
+        line-height: 72px;
+        margin: 0 0 15px 0;
+    }
+}
