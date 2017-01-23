@@ -365,7 +365,7 @@ body {
   margin: 0 0 15px 0; }
 
 .blurb__copy--width {
-  max-width: 300px; }
+  max-width: 450px; }
 
 /************************* Introduction *************************/
 .introduction {
@@ -504,3 +504,37 @@ body {
         color: #373636; }
       .slogan__visual {
         width: 225px; } }
+
+/************************* Project-first *************************/
+.project-first {
+  position: relative;
+  padding: 170px 0;
+  width: 100%;
+  overflow: hidden; }
+  .project-first__visual {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 569px;
+    height: 672px;
+    background: url(/assets/img/screen-project-1.png) center 100% no-repeat;
+    margin: 0; }
+
+/************************* Project-second *************************/
+.project-second {
+  position: relative;
+  padding: 200px 0;
+  width: 100%;
+  background-color: #efefef;
+  overflow: hidden; }
+  .project-second__wrapper {
+    display: flex;
+    justify-content: flex-end; }
+  .project-second__visual {
+    position: absolute;
+    top: 8%;
+    right: 46%;
+    width: 731px;
+    height: 607px;
+    background: url(/assets/img/screen-project-2.png) center 100% no-repeat;
+    margin: 0; }

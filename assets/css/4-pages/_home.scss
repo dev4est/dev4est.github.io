@@ -225,3 +225,52 @@
         }
     }
 }
+
+/************************* Project-first *************************/
+
+.project-first {
+    position: relative;
+    padding: 170px 0;
+    width: 100%;
+    overflow: hidden;
+    
+    &__visual {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        width: 569px;
+		height: 672px;
+        background: 
+            url(/assets/img/screen-project-1.png) center 100% no-repeat;
+        margin: 0;
+        
+    }
+}
+
+/************************* Project-second *************************/
+
+.project-second  {
+    position: relative;
+    padding: 200px 0;
+    width: 100%;
+    background-color: $bg-secondary;
+    overflow: hidden;
+    
+    &__wrapper {
+        display:flex;
+        justify-content: flex-end;
+    }
+    
+    &__visual {
+        position: absolute;
+        top: 8%;
+        right: 46%;
+        width: 731px;
+        height: 607px;
+        background: 
+            url(/assets/img/screen-project-2.png) center 100% no-repeat;
+        margin: 0;
+    
+    }
+
+}
