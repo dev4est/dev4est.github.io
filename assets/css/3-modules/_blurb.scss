@@ -11,4 +11,12 @@
         line-height: 72px;
         margin: 0 0 15px 0;
     }
+    
+    &__copy {
+        
+        &--width {
+            max-width: 300px;
+        }
+        
+    }
 }

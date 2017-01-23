@@ -193,7 +193,7 @@ html {
 
 body {
   background-color: white;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 24px;
   font-family: "Roboto Condensed", sans-serif;
   color: #9e9e9e;
@@ -240,7 +240,6 @@ body {
     color: #648bbb; }
 
 .logo__profession {
-  font-size: 17px;
   line-height: 17px;
   font-weight: 400;
   color: #9e9e9e;
@@ -365,6 +364,9 @@ body {
   line-height: 72px;
   margin: 0 0 15px 0; }
 
+.blurb__copy--width {
+  max-width: 300px; }
+
 /************************* Introduction *************************/
 .introduction {
   position: relative;
@@ -435,7 +437,8 @@ body {
     position: absolute;
     left: 0;
     bottom: 0;
-    z-index: 2; }
+    z-index: 2;
+    width: 465px; }
   .slogan__content {
     position: relative;
     z-index: 3; }
@@ -445,5 +448,59 @@ body {
       bottom: -120px;
       font-size: 32px;
       line-height: 36px;
-      font-family: "Brush Script MT", cursive;
+      font-family: "Alex Brush", cursive;
       color: #373636; }
+  @media (max-width: 991px) {
+    .slogan {
+      padding: 40px 0; }
+      .slogan__wrapper {
+        align-items: flex-start;
+        justify-content: center; }
+        .slogan__wrapper::before {
+          right: 0;
+          bottom: 0; }
+      .slogan__visual {
+        bottom: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 410px; }
+      .slogan__content {
+        text-align: center; }
+        .slogan__content-blurb {
+          padding: 0 15px; }
+          .slogan__content-blurb h2 {
+            font-size: 45px;
+            line-height: 45px; }
+          .slogan__content-blurb p {
+            margin-bottom: -15px; }
+        .slogan__content-signature {
+          display: none; } }
+  @media (max-width: 767px) {
+    .slogan {
+      height: 517px; }
+      .slogan__wrapper::before {
+        top: 163px; }
+      .slogan__visual {
+        width: 359px;
+        max-width: 100%; } }
+  @media (max-width: 480px) {
+    .slogan {
+      height: 450px; }
+      .slogan__wrapper::before {
+        top: 145px; }
+      .slogan__content-blurb h2 {
+        font-size: 32px;
+        line-height: 32px; }
+      .slogan__visual {
+        width: 313px; } }
+  @media (max-width: 364px) {
+    .slogan {
+      height: 430px; }
+      .slogan__wrapper::before {
+        top: 220px; }
+      .slogan__content-signature {
+        display: inherit;
+        position: static;
+        color: #373636; }
+      .slogan__visual {
+        width: 225px; } }
