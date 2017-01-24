@@ -17,6 +17,19 @@
         &--width {
             max-width: 450px;
         }
+        @media (max-width: 991px) {
+            max-width: 400px;
+        }
+        
+        @media (max-width: 767px) {
+            max-width: 300px;
+        } 
+        
+        @media (max-width: 565px) {
+            max-width: 565px;
+            text-align: center;
+        }
+        
         
     }
 }

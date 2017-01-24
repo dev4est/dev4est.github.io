@@ -367,6 +367,19 @@ body {
 .blurb__copy--width {
   max-width: 450px; }
 
+@media (max-width: 991px) {
+  .blurb__copy {
+    max-width: 400px; } }
+
+@media (max-width: 767px) {
+  .blurb__copy {
+    max-width: 300px; } }
+
+@media (max-width: 565px) {
+  .blurb__copy {
+    max-width: 565px;
+    text-align: center; } }
+
 /************************* Introduction *************************/
 .introduction {
   position: relative;
@@ -517,8 +530,41 @@ body {
     left: 50%;
     width: 569px;
     height: 672px;
-    background: url(/assets/img/screen-project-1.png) center 100% no-repeat;
-    margin: 0; }
+    margin: 0;
+    background: url(/assets/img/screen-project-1.png) center 100% no-repeat; }
+  @media (max-width: 991px) {
+    .project-first {
+      padding: 70px 0; }
+      .project-first__content h2 {
+        font-size: 45px;
+        line-height: 45px; }
+      .project-first__visual {
+        top: 14%;
+        left: 60%;
+        margin: 0;
+        width: 500px;
+        height: 312px;
+        background: url(/assets/img/project-1.1.jpg) center 100% no-repeat;
+        box-shadow: 5px 8px 30px 1px rgba(0, 0, 0, 0.21); } }
+  @media (max-width: 767px) {
+    .project-first__content h2 {
+      font-size: 45px;
+      line-height: 45px; }
+    .project-first__visual {
+      top: 17%;
+      left: 60%;
+      margin: 0;
+      width: 500px;
+      height: 312px;
+      box-shadow: 5px 8px 30px 1px rgba(0, 0, 0, 0.21); } }
+  @media (max-width: 565px) {
+    .project-first__wrapper {
+      text-align: center; }
+    .project-first__content h2 {
+      font-size: 32px;
+      line-height: 32px; }
+    .project-first__visual {
+      display: none; } }
 
 /************************* Project-second *************************/
 .project-second {
@@ -536,5 +582,15 @@ body {
     right: 46%;
     width: 731px;
     height: 607px;
-    background: url(/assets/img/screen-project-2.png) center 100% no-repeat;
-    margin: 0; }
+    margin: 0;
+    background: url(/assets/img/screen-project-2.png) center 100% no-repeat; }
+  @media (max-width: 364px) {
+    .project-second {
+      padding: 70px 0; }
+      .project-second__content {
+        text-align: center; }
+        .project-second__content h2 {
+          font-size: 32px;
+          line-height: 32px; }
+      .project-second__visual {
+        display: none; } }

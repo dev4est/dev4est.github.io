@@ -240,10 +240,73 @@
         left: 50%;
         width: 569px;
 		height: 672px;
-        background: 
-            url(/assets/img/screen-project-1.png) center 100% no-repeat;
         margin: 0;
+        background: url(/assets/img/screen-project-1.png) center 100% no-repeat; 
+    }
+    
+    @media (max-width: 991px) {
         
+        padding: 70px 0;
+       
+        &__content {
+
+            h2 {
+                font-size: 45px;
+                line-height: 45px;
+            }
+        }
+        
+        &__visual {
+                top: 14%;
+                left: 60%;
+                margin: 0;
+                width: 500px;
+                height: 312px;
+                background: 
+                   url(/assets/img/project-1.1.jpg) center 100% no-repeat;
+                box-shadow: 5px 8px 30px 1px rgba(0,0,0,0.21);
+		       
+        }
+    }
+    
+     @media (max-width: 767px) {
+         
+             &__content {
+
+            h2 {
+                font-size: 45px;
+                line-height: 45px;
+            }
+        }
+        
+        &__visual {
+                top: 17%;
+                left: 60%;
+                margin: 0;
+                width: 500px;
+                height: 312px;
+                box-shadow: 5px 8px 30px 1px rgba(0,0,0,0.21);
+		       
+        }  
+    }
+
+     @media (max-width: 565px) {
+         
+         &__wrapper {
+            text-align: center;
+         }
+         
+         &__content {
+            
+            h2 {
+              font-size: 32px;
+              line-height: 32px;
+         }
+    }
+         &__visual {
+            display: none;
+  
+         }
     }
 }
 
@@ -267,10 +330,30 @@
         right: 46%;
         width: 731px;
         height: 607px;
+        margin: 0;
         background: 
             url(/assets/img/screen-project-2.png) center 100% no-repeat;
-        margin: 0;
     
     }
+    
+       
+     @media (max-width: 364px) {
+         
+          padding: 70px 0;
+         
+        &__content {
+            
+            text-align: center;
+            
+            h2 {
+              font-size: 32px;
+              line-height: 32px; 
+            }
+         }
+         
+          &__visual {
+		    display: none;
+        }
 
-}
+    } 
+} 
