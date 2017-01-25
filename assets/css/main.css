@@ -377,8 +377,7 @@ body {
 
 @media (max-width: 565px) {
   .blurb__copy {
-    max-width: 565px;
-    text-align: center; } }
+    max-width: 565px; } }
 
 /************************* Introduction *************************/
 .introduction {
@@ -584,7 +583,7 @@ body {
     height: 607px;
     margin: 0;
     background: url(/assets/img/screen-project-2.png) center 100% no-repeat; }
-  @media (max-width: 364px) {
+  @media (max-width: 565px) {
     .project-second {
       padding: 70px 0; }
       .project-second__content {

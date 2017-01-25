@@ -23,13 +23,11 @@
         
         @media (max-width: 767px) {
             max-width: 300px;
-        } 
-        
-        @media (max-width: 565px) {
-            max-width: 565px;
-            text-align: center;
         }
         
+        @media (max-width: 565px) {
+            max-width: 565px;  
+        }
         
     }
 }
