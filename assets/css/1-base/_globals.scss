@@ -1,34 +1,21 @@
-//.no-margin {
-//	margin: 0;
-//}
-//.no-padding {
-//	padding: 0;
-//}
-//a {
-//	display: inline-block;
-//	color: $c-highlight;
-//	text-decoration: none;
-//}	
-//ul,
-//ol {
-//	margin: 0;
-//	padding: 0;
-//	list-style: none;
-//}
-//input,
-//textarea {
-//	outline: none;
-//}	
-//.bold {
-//	font-weight: 700;
-//}	
-//.italic {
-//	font-style: italic;
-//}
+.no-margin {
+	margin: 0;
+}
+
+input,
+textarea {
+	outline: none;
+}
+
 
 a {
     display: inline-block;
     text-decoration: none;
+    color: $c-highlight;
+    
+    &:hover {
+      font-weight: 700;  
+    }
 }
 
 ul, ol {

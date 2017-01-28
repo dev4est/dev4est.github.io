@@ -27,4 +27,18 @@ $(document).ready(function() {
 		
 	});
 
+  /***************** Work Carousel ******************/
+  
+  $('.last-projects__navigation-el').click(function() {
+	  
+	  var $this = $(this),
+	  		position = $this.parent().children().index($this);
+	  		
+	  $this.parent().children().removeClass('last-projects__navigation-el--active');
+	  $this.addClass('last-projects__navigation-el--active');
+	  $('.last-projects__list').children().removeClass('last-projects__list-el--active');
+	  $('.last-projects__list').children().eq(position).addClass('last-projects__list-el--active');
+	  
+  });
+
 });
