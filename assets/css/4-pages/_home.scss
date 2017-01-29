@@ -7,7 +7,7 @@
     height: 88vh;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(130deg, #8c0064, #a30395);
+    background: linear-gradient(130deg, #0355b3, #a30395);
    
     &__content {
         font-weight: 700;
@@ -29,7 +29,7 @@
         font-size: 52vw;
         font-weight: 700;
         opacity: 0.2;
-        color: #2046f2;
+        color: #597aa0;
     }
     
     &__arrow {
@@ -457,7 +457,7 @@
     
      &__visual {
         position: relative;
-		width: 50%;
+		width: 52%;
         z-index: 3;
         
         img {
@@ -468,7 +468,7 @@
         &__form {
 		    position: relative;
 		    display: flex;
-		    width: 47.5%;
+		    width: 48%;
 		    flex-wrap: wrap;
 		    justify-content: space-between;
 		    padding: 15px 0;
@@ -477,8 +477,8 @@
             
             &-el {
 			padding: 0 0 0 15px;
-			font-size: 16px;
-			border: 2px solid $c-secondary;
+			font-size: 18px;
+			border: 1px solid $c-secondary;
 			border-radius: 3px;
 		
 			&--name,
@@ -496,7 +496,7 @@
     }
           input[type="submit"] {
 			margin-left: auto;
-			padding: 10px 50px;
+			padding: 12px 50px;
         }        
     }
 }
@@ -511,7 +511,7 @@
     }
     
     &__left-block {
-        width: 35%;
+        width: 30%;
     }
     
      &__my-photo {
@@ -533,12 +533,12 @@
 			top: 0;
 			left: 0;
 			bottom: 0;
-			border: 2px solid $c-highlight;
+			border: 2px solid #88047c;
         }
     }
       
     &__right-block {
-        width: 65%;
+        width: 70%;
     }
     
     &__description {

@@ -11,10 +11,11 @@ textarea {
 a {
     display: inline-block;
     text-decoration: none;
-    color: $c-highlight;
+    color: $c-primary;
+    font-weight: 700;
     
     &:hover {
-      font-weight: 700;  
+       color: $c-primary; 
     }
 }
 

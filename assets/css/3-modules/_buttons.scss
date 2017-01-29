@@ -1,11 +1,14 @@
-.button {  
+.button,
+input[type="submit"] {
     border: 2px solid $c-highlight;
     border-radius: 25px;
     padding: 8px 25px;
     color: $c-highlight;
     font-weight: 700;
+    text-decoration: none;
     transition: .2s all ease-in-out;
-//    background-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
 
 &:hover, 
 &:active,
