@@ -657,7 +657,7 @@
 .footer {
 	position: relative;
 	width: 100%;
-	height: 100px;
+	height: 130px;
 	
         &__wrapper {
 		display: flex;
@@ -676,4 +676,29 @@
         width: 24px;
         fill: $c-primary;
     }
+
+    @media (max-width: 767px) {
+		
+		height: 130px;
+		padding: 10px 0;
+        
+        &__wrapper {
+            flex-direction: column;
+        }
+        
+        &__copyright  {
+            order:3;
+        }
+         
+        &__logo {
+			position: static;
+			transform: translate(0, 0);
+			order: 2;
+        }
+        
+        &__arrow-el {
+           top:20px;
+           right: 10px;
+        }
+   }
 }		

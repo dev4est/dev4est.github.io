@@ -816,7 +816,7 @@ input[type="submit"] {
 .footer {
   position: relative;
   width: 100%;
-  height: 100px; }
+  height: 130px; }
   .footer__wrapper {
     display: flex;
     align-items: center;
@@ -830,3 +830,18 @@ input[type="submit"] {
     position: absolute;
     width: 24px;
     fill: #373636; }
+  @media (max-width: 767px) {
+    .footer {
+      height: 130px;
+      padding: 10px 0; }
+      .footer__wrapper {
+        flex-direction: column; }
+      .footer__copyright {
+        order: 3; }
+      .footer__logo {
+        position: static;
+        transform: translate(0, 0);
+        order: 2; }
+      .footer__arrow-el {
+        top: 20px;
+        right: 10px; } }
