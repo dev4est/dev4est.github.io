@@ -435,7 +435,6 @@
 .contact {
     position: relative;
 	padding-top: 3px;
-    padding-bottom: 80px;
 	background-color: $bg-secondary;
     
     &__wrapper {
@@ -451,6 +450,7 @@
 			left: 75px;
 			right: 75px;
 			bottom: 0;
+            margin-bottom: 20px;
 			border: 10px solid $c-highlight;
         }
      }
@@ -499,6 +499,94 @@
 			padding: 12px 50px;
         }        
     }
+    @media (max-width: 991px) {
+       
+        &__heading {
+            font-size: 45px;
+            line-height: 45px;
+        }
+        
+        &__wrapper {
+            flex-direction: column;
+            padding: 0;
+            
+            &::before {
+                top: 25px;
+				left: 0;
+				right: 0;
+				bottom: 75px;
+            }
+        }
+        &__visual {
+			width: 700px;
+			max-width: 75%;
+			order: 2;
+        }
+        
+        &__form {
+			width: 600px;
+			max-width: 75%;
+			margin-bottom: 35px;
+			padding: 0 15px;
+        }
+    }
+    
+    @media (max-width: 767px) {
+       
+        &__visual {
+			width: 600px;
+			max-width: 95%;
+        }
+        
+        
+        &__form {
+			
+            &-el {
+			
+				&--name,
+                &--email {
+					width: 100%;
+                }
+					
+                &--name {
+					margin-bottom: 10px;
+                }
+				
+                &--message {
+					margin: 10px 0 20px 0;
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 480px) {
+		
+        &__wrapper  {
+			
+            &::before {
+				display: none;
+            }
+		}	
+        &__visual {
+			display: none;
+		}		
+        &__form {
+			max-width: 100%;
+			padding: 0;
+			
+            &-el {
+			
+				&--name,
+                &--email {
+					height: 40px;
+            }
+					
+                &--message {
+					height: 90px;
+                }
+            }
+        }
+}
 }
 /************************* About *************************/ 
 

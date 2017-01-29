@@ -678,7 +678,6 @@ input[type="submit"] {
 .contact {
   position: relative;
   padding-top: 3px;
-  padding-bottom: 80px;
   background-color: #efefef; }
   .contact__wrapper {
     display: flex;
@@ -692,6 +691,7 @@ input[type="submit"] {
       left: 75px;
       right: 75px;
       bottom: 0;
+      margin-bottom: 20px;
       border: 10px solid #0355b3; }
   .contact__visual {
     position: relative;
@@ -726,6 +726,49 @@ input[type="submit"] {
     .contact__form input[type="submit"] {
       margin-left: auto;
       padding: 12px 50px; }
+  @media (max-width: 991px) {
+    .contact__heading {
+      font-size: 45px;
+      line-height: 45px; }
+    .contact__wrapper {
+      flex-direction: column;
+      padding: 0; }
+      .contact__wrapper::before {
+        top: 25px;
+        left: 0;
+        right: 0;
+        bottom: 75px; }
+    .contact__visual {
+      width: 700px;
+      max-width: 75%;
+      order: 2; }
+    .contact__form {
+      width: 600px;
+      max-width: 75%;
+      margin-bottom: 35px;
+      padding: 0 15px; } }
+  @media (max-width: 767px) {
+    .contact__visual {
+      width: 600px;
+      max-width: 95%; }
+    .contact__form-el--name, .contact__form-el--email {
+      width: 100%; }
+    .contact__form-el--name {
+      margin-bottom: 10px; }
+    .contact__form-el--message {
+      margin: 10px 0 20px 0; } }
+  @media (max-width: 480px) {
+    .contact__wrapper::before {
+      display: none; }
+    .contact__visual {
+      display: none; }
+    .contact__form {
+      max-width: 100%;
+      padding: 0; }
+      .contact__form-el--name, .contact__form-el--email {
+        height: 40px; }
+      .contact__form-el--message {
+        height: 90px; } }
 
 /************************* About *************************/
 .about__wrapper {
