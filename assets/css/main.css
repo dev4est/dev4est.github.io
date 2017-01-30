@@ -822,27 +822,28 @@ input[type="submit"] {
   color: #373636; }
 
 .about__left-block {
-  width: 30%; }
+  width: 40%; }
 
 .about__my-photo {
   margin-bottom: 30px; }
   .about__my-photo img {
+    margin-left: 50px;
     box-shadow: 5px 8px 30px 1px rgba(0, 0, 0, 0.21); }
 
 .about__contacts {
   position: relative;
-  padding-left: 25px;
+  padding-left: 80px;
   margin-bottom: 20px; }
   .about__contacts::after {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50px;
     bottom: 0;
     border: 2px solid #88047c; }
 
 .about__right-block {
-  width: 70%; }
+  width: 60%; }
 
 .about__description {
   list-style: inherit; }
