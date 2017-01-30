@@ -414,7 +414,7 @@ input[type="submit"] {
   height: 88vh;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(130deg, #0355b3, #a30395); }
+  background: linear-gradient(190deg, #244265, #a30395); }
   .introduction__content {
     font-weight: 700;
     font-size: 20vw;
@@ -526,7 +526,8 @@ input[type="submit"] {
     .slogan {
       height: 450px; }
       .slogan__wrapper::before {
-        top: 145px; }
+        top: 150px;
+        border: 5px solid #0355b3; }
       .slogan__content-blurb h2 {
         font-size: 32px;
         line-height: 32px; }
@@ -536,7 +537,8 @@ input[type="submit"] {
     .slogan {
       height: 430px; }
       .slogan__wrapper::before {
-        top: 220px; }
+        top: 225px;
+        border: 5px solid #0355b3; }
       .slogan__content-signature {
         display: inherit;
         position: static;
@@ -636,7 +638,7 @@ input[type="submit"] {
   position: relative;
   width: 100%;
   background-color: #efefef;
-  padding: 30px 0 60px 0; }
+  padding: 30px 0; }
   .last-projects__list {
     position: relative;
     padding: 30px 0; }
@@ -656,11 +658,12 @@ input[type="submit"] {
         justify-content: space-between; }
   .last-projects__content {
     position: relative;
-    width: 40%; }
+    width: 40%;
+    z-index: 1; }
   .last-projects__visual {
     position: relative;
     width: 60%;
-    z-index: 1; }
+    z-index: 2; }
     .last-projects__visual img {
       display: block;
       width: 100%; }
@@ -717,7 +720,8 @@ input[type="submit"] {
       font-size: 32px;
       line-height: 32px; }
     .last-projects__visual {
-      max-width: 100%; } }
+      max-width: 100%;
+      height: 100%; } }
 
 /************************* Contact *************************/
 .contact {
@@ -803,6 +807,9 @@ input[type="submit"] {
     .contact__form-el--message {
       margin: 10px 0 20px 0; } }
   @media (max-width: 480px) {
+    .contact__heading {
+      font-size: 32px;
+      line-height: 32px; }
     .contact__wrapper::before {
       display: none; }
     .contact__visual {
@@ -857,6 +864,24 @@ input[type="submit"] {
   margin: 0;
   margin-bottom: 10px;
   font-size: 38px; }
+
+@media (max-width: 480px) {
+  .about {
+    padding: 30px 0; }
+    .about__wrapper {
+      flex-direction: column; }
+    .about__heading {
+      font-size: 32px;
+      line-height: 32px; }
+    .about__left-block {
+      display: none; }
+    .about__right-block {
+      width: 100%; }
+    .about__title--name {
+      font-size: 32px;
+      line-height: 32px; }
+    .about__description {
+      list-style: inherit; } }
 
 /************************* Footer *************************/
 .footer {

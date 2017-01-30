@@ -7,7 +7,7 @@
     height: 88vh;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(130deg, #0355b3, #a30395);
+    background: linear-gradient(190deg, #244265, #a30395);
    
     &__content {
         font-weight: 700;
@@ -180,7 +180,8 @@
         &__wrapper {
             
             &::before {
-                top: 145px;
+                top: 150px;
+                border: 5px solid $c-highlight;
             }
         }
         
@@ -207,7 +208,8 @@
         &__wrapper {
             
             &::before {
-                top: 220px;
+                top: 225px;
+                border: 5px solid $c-highlight;
             }
         }
         
@@ -391,7 +393,7 @@
         position: relative;
         width: 100%;
         background-color: $bg-secondary;
-        padding: 30px 0 60px 0;
+        padding: 30px 0;
     
         &__list {
             position: relative;
@@ -421,12 +423,13 @@
         &__content {
 		position: relative;
         width: 40%;
+        z-index: 1;
         }
         
         &__visual {
             position: relative;
             width: 60%;
-            z-index: 1;
+            z-index: 2;
             
             img {
 			display: block;
@@ -526,6 +529,7 @@
         }
               &__visual {
 			max-width: 100%;
+            height: 100%;
         }
   }
 }
@@ -660,6 +664,11 @@
     }
     
     @media (max-width: 480px) {
+        
+         &__heading {
+            font-size: 32px;
+            line-height: 32px;
+        }
 		
         &__wrapper  {
 			
@@ -750,6 +759,47 @@
             font-size: 38px;
         }
     }
+ 
+    @media (max-width: 480px)  {
+        
+        padding: 30px 0; 
+        
+         &__wrapper {
+       
+         flex-direction: column;
+          
+        }
+        
+         &__heading {
+			font-size: 32px;
+            line-height: 32px;
+        }
+        
+        &__left-block {
+            display: none;
+        }
+        
+        &__right-block { 
+            
+            width: 100%;
+    
+        }
+        
+        &__title {
+            
+            &--name {
+            font-size: 32px;
+            line-height: 32px;
+            }
+        }
+        
+          &__description {
+         list-style: inherit;
+        }
+    
+    
+    }
+
 }
 
 
