@@ -522,8 +522,8 @@
 			
             &-blurb {
               h2 {
-					font-size: 32px;
-                    line-height: 32px;
+					font-size: 22px;
+                    line-height: 22px;
                 }
             }
         }
@@ -544,7 +544,7 @@
     &__wrapper {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: space-between; 
 		padding: 40px 0;
         
         &::before {
@@ -599,7 +599,7 @@
             }
     }
           input[type="submit"] {
-			margin-left: auto;
+			margin-left: auto; 
 			padding: 12px 50px;
         }        
     }
@@ -664,7 +664,7 @@
     }
     
     @media (max-width: 480px) {
-        
+		
          &__heading {
             font-size: 32px;
             line-height: 32px;
@@ -683,8 +683,9 @@
 			max-width: 100%;
 			padding: 0;
 			
-            &-el {
 			
+            &-el {
+				
 				&--name,
                 &--email {
 					height: 40px;
@@ -703,33 +704,34 @@
     
     &__wrapper {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between; 
         color: $c-primary;
     }
     
     &__left-block {
         width: 40%;
+		order: 2; 
     }
     
      &__my-photo {
         margin-bottom: 30px;
         
         img {
-            margin-left: 50px;
+             
             box-shadow: 5px 8px 30px 1px rgba(0,0,0,0.21);
         }
     }
     
     &__contacts {
         position: relative;
-        padding-left: 80px;
-        margin-bottom: 20px;
+        margin-left: 15px;  
+        margin-bottom: 20px; 
         
         &::after {
             content: "";
 			position: absolute;
 			top: 0;
-			left: 50px;
+			left: -16px;    
 			bottom: 0;
 			border: 2px solid #88047c;
         }
@@ -737,6 +739,8 @@
       
     &__right-block {
         width: 60%;
+		order: 1; 
+		margin-right: 90px;  
     }
     
     &__description {
@@ -759,14 +763,36 @@
             font-size: 38px;
         }
     }
+	
+	@media (max-width: 767px) { 
+	    
+		&__wrapper {  
+         	flex-direction: column;
+		 	align-items: center;
+			 
+        }
+		
+		 &__left-block {
+        	width: auto;  
+    	} 
+		
+		 &__right-block {
+        	width: 100%;
+			margin-right: 0;
+			margin-bottom: 50px; 
+			 
+    	}
+	
+	}
+	
  
     @media (max-width: 480px)  {
         
         padding: 30px 0; 
         
          &__wrapper {
-       
          flex-direction: column;
+		 align-items: center;
           
         }
         
@@ -774,22 +800,12 @@
 			font-size: 32px;
             line-height: 32px;
         }
-        
-        &__left-block {
-            display: none;
-        }
-        
-        &__right-block { 
-            
-            width: 100%;
-    
-        }
-        
+         
         &__title {
             
             &--name {
-            font-size: 32px;
-            line-height: 32px;
+            font-size: 20px;
+            line-height: 20px;
             }
         }
         
