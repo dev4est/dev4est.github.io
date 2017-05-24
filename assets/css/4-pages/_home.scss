@@ -7,8 +7,9 @@
     height: 88vh;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(190deg, #244265, #a30395);
-    
+    background: url(/assets/img/bg.jpg)  center top no-repeat;   
+    background-size: cover;
+	
     &__content {
         font-weight: 700;
         font-size: 20vw;
@@ -26,7 +27,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 52vw;
+        font-size: 45vw;
         font-weight: 700;
         opacity: 0.2;
         color: #b7b6b6;
