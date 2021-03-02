@@ -1,8 +1,8 @@
 {
-  "name": "keybro",
+  "name": "dev4est",
   "version": "1.0.0",
-  "description": "Portfolio KeyBro",
-  "author": "KeyBro",
+  "description": "Portfolio Dev4est",
+  "author": "Dev4est",
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
